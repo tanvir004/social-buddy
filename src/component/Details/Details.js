@@ -23,7 +23,7 @@ useEffect(() => {
 
   }, [])
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/comments/${id}`)
+    fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
     .then(res => res.json())
     .then(data =>{
       setDetails(data)
@@ -32,15 +32,18 @@ useEffect(() => {
 
   }, [])
   console.log(comment);
+  
     return (
+        
         <div className="detailsBody">
-            {/* <h5><span className="highlight">User Id: </span>{comment.userId}</h5>
-            <h5><span className="highlight">Post ID: </span>{details.postId}</h5>
-            <h5><span className="highlight">Unique ID: </span>{comment.id}</h5> */}
+           {
+             details.map(details=> <div className="post">
+               <div>
+         
+        </div>
+                
             <h5><span className="highlight">Name: </span>{details.name}</h5>
             <h5><span className="highlight">Emails: </span>{details.email}</h5>
-            <h3><span className="highlight">Title: </span>{comment.title}</h3>
-            <h5><span className="highlight">Post: </span>{comment.body}</h5>
             <div>
             <Grid container spacing={1}>
             <Grid container item xs={2} spacing={1}>
@@ -55,6 +58,8 @@ useEffect(() => {
                 </Grid>
             
             </div>
+             </div>)
+           }
             
         </div>
     );

@@ -16,3 +16,15 @@
 .highlight{
     color: #3b5998;
 }
+.posts {
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #3b5998;
+    background: white;
+    border-radius: 10px;
+}
+.cmtHeadline{
+    color: #3b5998;
+    text-align: center;
+
+}

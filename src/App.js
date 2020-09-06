@@ -27,7 +27,7 @@ function App() {
           </Route>
           <Route exact path="/">
             <Post></Post>
-          </Route>
+          </Route> 
           {/* <Route path="/">
             <App></App>
           </Route> 
@@ -37,13 +37,6 @@ function App() {
         </Switch>
       </Router>
 
-
-      {/* <h2>Post: {post.length}</h2>
-      <ul>
-        {
-          post.map(pst => <Post pst = {pst}></Post> )
-        }
-      </ul> */}
       
       
       
