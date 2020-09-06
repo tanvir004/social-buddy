@@ -39,7 +39,7 @@ const Post = () => {
                     <Grid container item xs={8} spacing={3}>
                     <h2 className="post-title highlight">Title: {post.title}</h2>
                     <h4 className="post-body">{post.body}</h4>
-                    <Button variant="contained" color="primary"><Link to={"/detail/"+post.id}>See Comments</Link></Button>
+                    <Button variant="contained"><Link to={"/detail/"+post.id}>See Comments</Link></Button>
                       <FormRow />
                     </Grid>
                      
