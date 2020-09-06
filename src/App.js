@@ -10,17 +10,14 @@ import {
 } from "react-router-dom";
 import Details from './component/Details/Details';
 import NotFound from './component/NotFound/NotFound';
+import Header from './component/Header/Header';
 
 function App() {
-    
-
-  
-
-
-  
+      
   
   return (
     <div >
+      <Header></Header>
       
       <Router>
         <Switch>
@@ -33,8 +30,8 @@ function App() {
           </Route>
           {/* <Route path="/">
             <App></App>
-          </Route> */}
-          {/* <Route exact path = "*">
+          </Route> 
+          <Route exact path = "*">
           <NotFound></NotFound>
           </Route> */}
         </Switch>
